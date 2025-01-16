@@ -1,0 +1,143 @@
+audio {
+    display:none
+}
+
+.Textbox {
+    background-color: rgb(209, 209, 209);
+    color: rgb(rgb(166, 166, 166), green, blue);
+    border: double;
+    border-radius: 10px;
+    height: 10vh;
+    width: 50%;
+    text-align: center;
+    padding: 1%;
+    position: absolute;
+    bottom: 10vh;
+    left: 25%;
+}
+
+.Honger {
+    color: white;
+    border-color: black;
+    text-align: left;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    border-style: double;
+    background-color: rgb(126, 126, 126);
+    width: 10%;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 25vh;
+}
+
+.Slaap {
+    color: white;
+    border-color: black;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    border-style: double;
+    background-color: rgb(126, 126, 126);
+    width: 10%;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 45%;
+}
+
+.Plezier {
+    color: white;
+    border-color: black;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    border-style: double;
+    background-color: rgb(126, 126, 126);
+    width: 10%;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 77.3%;
+}
+
+.Plezierbar {
+    color: white;
+    border-color: black;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    border-style: double;
+    background-color: rgb(255, 0, 0);
+    width: 10%;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 77.35%;
+}
+
+.Slaapbar {
+    color: white;
+    border-color: black;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    border-style: double;
+    background-color: rgb(33, 10, 126);
+    width: 10%;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 45%;
+}
+
+.Hongerbar {
+    color: white;
+    border-color: black;
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    border-style: double;
+    background-color: rgb(14, 160, 46);
+    width: 10%;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 25vh;
+}
+
+.Pleziertekst {
+    color: rgb(255, 255, 255);
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    width: 20vh;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 162.4vh;
+}
+
+.Hongertekst {
+    color: rgb(255, 255, 255);
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    width: 20vh;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 25vh;
+}
+
+.Slaaptekst {
+    color: rgb(255, 255, 255);
+    padding-left: 1vh;
+    padding-top: 1vh;
+    text-align: left;
+    width: 20vh;
+    height: 5vh;
+    position: absolute;
+    top: 5vh;
+    left: 94.5vh;
+}

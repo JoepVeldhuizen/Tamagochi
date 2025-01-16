@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Tamagochi</title>
+  </head>
+  <body>
+    <!-- audioplayer met autoplay en automatisch gemute -->
+    <audio id="achtergrondmuziek" controls autoplay muted>
+      <source src="muziek.mp3" />
+    </audio>
+
+    <!-- grijze achtergrond -->
+    <div id="honger" class="Honger"></div>
+    <!-- de kleur bar die je ziet -->
+    <div id="hongerbar" class="Hongerbar"></div>
+    <!-- de tekst -->
+    <div id="hongertekst" class="Hongertekst">Honger:</div>
+
+    <!-- grijze achtergrond -->
+    <div id="slaap" class="Slaap"></div>
+    <!-- de kleur bar die je ziet -->
+    <div id="slaapbar" class="Slaapbar"></div>
+    <!-- de tekst -->
+    <div id="slaaptekst" class="Slaaptekst">Slaap:</div>
+
+    <!-- grijze achtergrond -->
+    <div id="plezier" class="Plezier"></div>
+    <!-- de kleur bar die je ziet -->
+    <div id="plezierbar" class="Plezierbar"></div>
+    <!-- de tekst -->
+    <div id="pleziertekst" class="Pleziertekst">Plezier:</div>
+
+    <div id="textbox" class="Textbox"></div>
+
+    <script>
+      let honger = 100;
+      let slaap = 100;
+      let plezier = 100;
+
+      // functie om de tekst van de bars te veranderen en de bars kleiner te laten worden
+      function updateBars() {
+        document.getElementById("hongertekst").innerHTML =
+          "Honger: " + Math.round(honger);
+        document.getElementById("slaaptekst").innerHTML =
+          "Slaap: " + Math.round(slaap);
+        document.getElementById("pleziertekst").innerHTML =
+          "Plezier: " + Math.round(plezier);
+
+        document.getElementById("hongerbar").style.width = honger / 10 + "%";
+
+        document.getElementById("slaapbar").style.width = slaap / 10 + "%";
+
+        document.getElementById("plezierbar").style.width = plezier / 10 + "%";
+      }
+
+      //timer om de bars te updaten
+      setInterval(() => {
+        honger = Math.max(0, honger - 1);
+        slaap = Math.max(0, slaap - 1);
+        plezier = Math.max(0, plezier - 1);
+
+        updateBars();
+      }, 1500);
+      //  /\ verander deze om te veranderen hoe lang het duurt voor er 1 van de waardes wordt afgehaald (in miliseconden)
+    </script>
+
+    <script>
+      //speel de audio af en unmute de audio zodra er ergens is geklikt
+      const audio = document.getElementById("achtergrondmuziek");
+      window.addEventListener("click", () => {
+        if (audio.muted) {
+          audio.muted = false;
+          audio.play();
+        }
+      });
+    </script>
+
+    <script>
+      //tekst box inhoud veranderen
+      let tekst = "Test tekst";
+
+      document.getElementById("textbox").innerHTML = tekst;
+    </script>
+  </body>
+</html>
