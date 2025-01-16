@@ -110,16 +110,29 @@
 
       //knoppen die de values veranderen
       function etengeven() {
-        console.log("Eten gegeven");
-        honger + 10;
+        if (honger < 91) {
+          console.log("Eten gegeven");
+          honger = honger + 10;
+          document.getElementById("hongertekst").innerHTML =
+            "Honger: " + Math.round(honger);
+          document.getElementById("hongerbar").style.width = honger / 10 + "%";
+        }
       }
 
       function slaapgeven() {
+        console.log("Slaap gegeven");
         slaap + 10;
+        document.getElementById("slaaptekst").innerHTML =
+          "Slaap: " + Math.round(slaap);
+        document.getElementById("slaapbar").style.width = slaap / 10 + "%";
       }
 
       function pleziergeven() {
+        console.log("Plezier gegeven");
         plezier + 10;
+        document.getElementById("pleziertekst").innerHTML =
+          "Plezier: " + Math.round(plezier);
+        document.getElementById("plezierbar").style.width = plezier / 10 + "%";
       }
 
       //timer om de bars te updaten
