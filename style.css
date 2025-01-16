@@ -2,17 +2,41 @@ audio {
     display:none
 }
 
+.Legootje {
+    height: 15%;
+    left: 67.5%;
+    width: 10%;
+    top: 85%;
+    position: absolute;
+}
+
+.Banaantje {
+    height: 15%;
+    left: 25%;
+    width: 10%;
+    top: 85%;
+    position: absolute;
+}
+
+.Bedje {
+    height: 15%;
+    left: 46.5%;
+    width: 10%;
+    top: 85%;
+    position: absolute;
+}
+
 .Textbox {
     background-color: rgb(209, 209, 209);
     color: rgb(rgb(166, 166, 166), green, blue);
     border: double;
     border-radius: 10px;
-    height: 10vh;
+    height: 5vh;
     width: 50%;
     text-align: center;
     padding: 1%;
     position: absolute;
-    bottom: 10vh;
+    bottom: 20vh;
     left: 25%;
 }
 
