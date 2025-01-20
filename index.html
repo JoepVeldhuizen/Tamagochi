@@ -10,6 +10,8 @@
       <source src="muziek.mp3" />
     </audio>
 
+    <img src="diddy.png" class="diddy" />
+
     <!-- grijze achtergrond -->
     <div id="honger" class="Honger"></div>
     <!-- de kleur bar die je ziet -->
@@ -117,6 +119,12 @@
           document.getElementById("hongertekst").innerHTML =
             "Honger: " + Math.round(honger);
           document.getElementById("hongerbar").style.width = honger / 10 + "%";
+        } else {
+          console.log("Eten gegeven");
+          honger = honger = 100;
+          document.getElementById("hongertekst").innerHTML =
+            "Honger: " + Math.round(honger);
+          document.getElementById("hongerbar").style.width = honger / 10 + "%";
         }
       }
 
@@ -127,6 +135,12 @@
           document.getElementById("slaaptekst").innerHTML =
             "Slaap: " + Math.round(slaap);
           document.getElementById("slaapbar").style.width = slaap / 10 + "%";
+        } else {
+          console.log("Slaap gegeven");
+          slaap = slaap = 100;
+          document.getElementById("slaaptekst").innerHTML =
+            "Slaap: " + Math.round(slaap);
+          document.getElementById("slaapbar").style.width = slaap / 10 + "%";
         }
       }
 
@@ -134,6 +148,13 @@
         if (plezier < 96) {
           console.log("Plezier gegeven");
           plezier = plezier + 5;
+          document.getElementById("pleziertekst").innerHTML =
+            "Plezier: " + Math.round(plezier);
+          document.getElementById("plezierbar").style.width =
+            plezier / 10 + "%";
+        } else {
+          console.log("Plezier gegeven");
+          plezier = 100;
           document.getElementById("pleziertekst").innerHTML =
             "Plezier: " + Math.round(plezier);
           document.getElementById("plezierbar").style.width =
@@ -150,17 +171,6 @@
         updateBars();
       }, 1500);
       //  /\ verander deze om te veranderen hoe lang het duurt voor er 1 van de waardes wordt afgehaald (in miliseconden)
-    </script>
-
-    <script>
-      //speel de audio af en unmute de audio zodra er ergens is geklikt
-      const audio = document.getElementById("achtergrondmuziek");
-      window.addEventListener("click", () => {
-        if (audio.muted) {
-          audio.muted = false;
-          audio.play();
-        }
-      });
     </script>
 
     <script>
