@@ -180,21 +180,52 @@
 
       //tekst box inhoud veranderen
       let tekst = "Test tekst";
+      let mood = "";
+
+      let tekstdelen = [
+        [
+          "Laten we een diddy party hebben!",
+          "Ik wil spelen.",
+          "Ik verveel mij.",
+        ], // verdrietig
+        ["Ik heb honger.", "Ik wil eten.", "Geef mij eten."], // honger
+        ["Ik ben moe.", "Ik wil slapen.", "Laat mij slapen."], // moe
+        ["Ik ben blij.", "Ik ben helemaal tevreden.", "Ik ben helemaal blij."], // blij
+      ];
 
       function checkvalues() {
-        document.getElementById("textbox").innerHTML = tekst;
+        let niewemood = "";
 
         if (plezier < 25 || honger < 25 || slaap < 25) {
           document.getElementById("diddymond").src = "verdrietig.png";
 
-          if (plezier < 25) tekst = "Ik ben verdrietig!";
+          if (plezier < 25) {
+            niewemood = "plezier";
+            tekst =
+              tekstdelen[0][Math.floor(Math.random() * tekstdelen[0].length)];
+          }
 
-          if (honger < 25) tekst = "Ik heb honger!";
+          if (honger < 25) {
+            niewemood = "honger";
+            tekst =
+              tekstdelen[1][Math.floor(Math.random() * tekstdelen[1].length)];
+          }
 
-          if (slaap < 25) tekst = "Ik ben moe!";
+          if (slaap < 25) {
+            niewemood = "slaap";
+            tekst =
+              tekstdelen[2][Math.floor(Math.random() * tekstdelen[2].length)];
+          }
         } else {
-          tekst = "Ik ben helemaal blij!";
+          niewemood = "blij";
+          tekst =
+            tekstdelen[3][Math.floor(Math.random() * tekstdelen[3].length)];
           document.getElementById("diddymond").src = "blij.png";
+        }
+
+        if (mood !== niewemood) {
+          mood = niewemood;
+          document.getElementById("textbox").innerHTML = tekst;
         }
       }
     </script>
