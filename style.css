@@ -1,180 +1,158 @@
 audio {
-    display:none
+    display: none;
 }
 
 .Legootje {
-    height: 15%;
-    left: 67.5%;
-    width: 10%;
-    top: 85%;
+    height: 15vh;
+    width: 10vw;
     position: absolute;
+    bottom: 5vh;
+    left: 67.5vw;
 }
 
 .Banaantje {
-    height: 15%;
-    left: 25%;
-    width: 10%;
-    top: 85%;
+    height: 15vh;
+    width: 10vw;
     position: absolute;
+    bottom: 5vh;
+    left: 25vw;
 }
 
 .Bedje {
-    height: 15%;
-    left: 46.5%;
-    width: 10%;
-    top: 85%;
+    height: 15vh;
+    width: 10vw;
     position: absolute;
+    bottom: 5vh;
+    left: 46.5vw;
 }
 
 .Textbox {
     background-color: rgb(209, 209, 209);
-    color: rgb(rgb(166, 166, 166), green, blue);
+    color: rgb(166, 166, 166);
     border: double;
     border-radius: 10px;
     height: 5vh;
-    width: 50%;
+    width: 50vw;
     text-align: center;
-    padding: 1%;
+    padding: 1vh;
     position: absolute;
     bottom: 20vh;
-    left: 25%;
+    left: 25vw;
 }
 
 .Honger {
     color: white;
     border-color: black;
-    text-align: left;
-    padding-left: 1vh;
-    padding-top: 1vh;
     border-style: double;
     background-color: rgb(126, 126, 126);
-    width: 10%;
+    width: 9.2vw;
     height: 5vh;
     position: absolute;
     top: 5vh;
-    left: 25vh;
+    left: 25vw;
+    padding: 1vh 0 0 1vh;
+    text-align: left;
 }
 
 .Slaap {
     color: white;
     border-color: black;
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
     border-style: double;
     background-color: rgb(126, 126, 126);
-    width: 10%;
+    width: 9.2vw;
     height: 5vh;
     position: absolute;
     top: 5vh;
-    left: 45%;
+    left: 45vw;
+    padding: 1vh 0 0 1vh;
+    text-align: left;
 }
 
 .Plezier {
     color: white;
     border-color: black;
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
     border-style: double;
     background-color: rgb(126, 126, 126);
-    width: 10%;
+    width: 9.2vw;
     height: 5vh;
     position: absolute;
     top: 5vh;
-    left: 77.3%;
+    left: 65vw;
+    padding: 1vh 0 0 1vh;
+    text-align: left;
 }
 
 .Plezierbar {
-    color: white;
-    border-color: black;
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
-    border-style: double;
     background-color: rgb(255, 0, 0);
-    width: 10%;
-    height: 5vh;
+    width: 10vw;
+    height: 6.7vh;
     position: absolute;
     top: 5vh;
-    left: 77.35%;
+    left: 65vw;
 }
 
 .Slaapbar {
-    color: white;
-    border-color: black;
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
-    border-style: double;
     background-color: rgb(33, 10, 126);
-    width: 10%;
-    height: 5vh;
+    width: 10vw;
+    height: 6.7vh;
     position: absolute;
     top: 5vh;
-    left: 45%;
+    left: 45vw;
 }
 
 .Hongerbar {
-    color: white;
-    border-color: black;
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
-    border-style: double;
     background-color: rgb(14, 160, 46);
-    width: 10%;
-    height: 5vh;
+    width: 10vw;
+    height: 6.7vh;
     position: absolute;
     top: 5vh;
-    left: 25vh;
+    left: 25vw;
 }
 
 .Pleziertekst {
+    font-size: 2vh;
     color: rgb(255, 255, 255);
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
-    width: 20vh;
+    width: 20vw;
     height: 5vh;
     position: absolute;
     top: 5vh;
-    left: 162.4vh;
+    left: 65vw;
+    padding: 1vh;
 }
 
 .Hongertekst {
+    font-size: 2vh;
     color: rgb(255, 255, 255);
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
-    width: 20vh;
+    width: 20vw;
     height: 5vh;
     position: absolute;
     top: 5vh;
-    left: 25vh;
+    left: 25vw;
+    padding: 1vh;
 }
 
 .Slaaptekst {
+    font-size: 2vh;
     color: rgb(255, 255, 255);
-    padding-left: 1vh;
-    padding-top: 1vh;
-    text-align: left;
-    width: 20vh;
+    width: 20vw;
     height: 5vh;
     position: absolute;
     top: 5vh;
-    left: 94.5vh;
+    left: 45vw;
+    padding: 1vh;
 }
 
 .diddy {
-position: absolute;
-top: 12%;
-left: 32%
+    height: 60vh;
+    position: absolute;
+    top: 42.3%;
+    left: 51%;
+    transform: translate(-50%, -50%);
 }
 
 .diddymond {
     position: absolute;
     top: 35vh;
-    left: 106vh;
+    left: 50vw;
     height: 13vh;
 }
