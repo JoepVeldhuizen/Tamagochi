@@ -165,11 +165,16 @@ audio {
     top: 5vh;
     left: 94.5vh;
 }
-.diddy {
 
+.diddy {
 position: absolute;
 top: 12%;
 left: 32%
+}
 
-
+.diddymond {
+    position: absolute;
+    top: 35vh;
+    left: 106vh;
+    height: 13vh;
 }

@@ -11,7 +11,8 @@
     </audio>
 
     <img src="diddy.png" class="diddy" />
-  
+
+    <img src="" class="diddymond" id="diddymond" />
 
     <!-- grijze achtergrond -->
     <div id="honger" class="Honger"></div>
@@ -172,13 +173,30 @@
         updateBars();
       }, 1500);
       //  /\ verander deze om te veranderen hoe lang het duurt voor er 1 van de waardes wordt afgehaald (in miliseconden)
-    </script>
 
-    <script>
+      setInterval(() => {
+        checkvalues();
+      }, 100);
+
       //tekst box inhoud veranderen
       let tekst = "Test tekst";
 
-      document.getElementById("textbox").innerHTML = tekst;
+      function checkvalues() {
+        document.getElementById("textbox").innerHTML = tekst;
+
+        if (plezier < 25 || honger < 25 || slaap < 25) {
+          document.getElementById("diddymond").src = "verdrietig.png";
+
+          if (plezier < 25) tekst = "Ik ben verdrietig!";
+
+          if (honger < 25) tekst = "Ik heb honger!";
+
+          if (slaap < 25) tekst = "Ik ben moe!";
+        } else {
+          tekst = "Ik ben helemaal blij!";
+          document.getElementById("diddymond").src = "blij.png";
+        }
+      }
     </script>
   </body>
 </html>
