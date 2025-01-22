@@ -166,3 +166,13 @@ audio {
     position: absolute;
     transition-duration: 1s;
 }
+
+.retry {
+    visibility: hidden;
+    text-align: center;
+    height: 10vh;
+    font-size: 5vh;
+    position: absolute;
+    left: 40vw;
+    top: 60vh;
+}

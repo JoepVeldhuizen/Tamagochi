@@ -94,6 +94,8 @@
 
     <div id="textbox" class="Textbox"></div>
 
+    <button id="retry" onclick="retry()" class="retry">Opnieuw proberen</button>
+
     <script>
       let honger = 100;
       let slaap = 100;
@@ -173,7 +175,7 @@
         plezier = Math.max(0, plezier - 1);
 
         updateBars();
-      }, 1500);
+      }, 100);
       //  /\ verander deze om te veranderen hoe lang het duurt voor er 1 van de waardes wordt afgehaald (in miliseconden)
 
       setInterval(() => {
@@ -227,6 +229,7 @@
         }
 
         if (plezier < 1 || honger < 1 || slaap < 1) {
+          document.getElementById("retry").style.visibility = "visible";
           document.getElementById("cel").style.top = "0vh";
           document.getElementById("cel").style.visibility = "visible";
           niewemood = "dood";
@@ -238,6 +241,10 @@
           mood = niewemood;
           document.getElementById("textbox").innerHTML = tekst;
         }
+      }
+
+      function retry() {
+        location.reload();
       }
     </script>
   </body>
