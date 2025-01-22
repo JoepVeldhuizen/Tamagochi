@@ -23,7 +23,7 @@ audio {
     width: 10vw;
     position: absolute;
     bottom: 5vh;
-    left: 46.5vw;
+    left: 45vw;
 }
 
 .Textbox {
@@ -155,4 +155,13 @@ audio {
     top: 35vh;
     left: 50vw;
     height: 13vh;
+}
+
+.cel {
+    left: 0vw;
+    top: -100vh;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transition-duration: 1s;
 }

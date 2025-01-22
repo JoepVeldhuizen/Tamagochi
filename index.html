@@ -90,6 +90,8 @@
       </svg>
     </button>
 
+    <img id="cel" class="cel" src="cel.png" />
+
     <div id="textbox" class="Textbox"></div>
 
     <script>
@@ -171,7 +173,7 @@
         plezier = Math.max(0, plezier - 1);
 
         updateBars();
-      }, 1500);
+      }, 100);
       //  /\ verander deze om te veranderen hoe lang het duurt voor er 1 van de waardes wordt afgehaald (in miliseconden)
 
       setInterval(() => {
@@ -191,6 +193,7 @@
         ["Ik heb honger.", "Ik wil eten.", "Geef mij eten."], // honger
         ["Ik ben moe.", "Ik wil slapen.", "Laat mij slapen."], // moe
         ["Ik ben blij.", "Ik ben helemaal tevreden.", "Ik ben helemaal blij."], // blij
+        ["Ik ga de cel in!", "Ik ben gepakt!", "Nu ben ik dood!"], // dood
       ];
 
       function checkvalues() {
@@ -221,6 +224,13 @@
           tekst =
             tekstdelen[3][Math.floor(Math.random() * tekstdelen[3].length)];
           document.getElementById("diddymond").src = "blij.png";
+        }
+
+        if (plezier < 1 || honger < 1 || slaap < 1) {
+          document.getElementById("cel").style.top = "0vh";
+          niewemood = "dood";
+          tekst =
+            tekstdelen[4][Math.floor(Math.random() * tekstdelen[4].length)];
         }
 
         if (mood !== niewemood) {
